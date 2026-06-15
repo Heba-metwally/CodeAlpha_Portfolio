@@ -20,27 +20,34 @@ header {
     padding: 15px 5%;
     position: sticky;
     top: 0;
-    background: rgba(5, 11, 31, 0.75);
+    z-index: 1000;
+    background: rgba(5, 11, 31, 0.85);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.3);
 }
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 header nav ul {
     display: flex;
     list-style: none;
+    flex-direction: row;
+    gap: 25px;
 }
 header nav ul li {
-    margin-left: 25px;
+    margin-left: 0;
 }
 header nav ul li a {
     color: #cbd5e1;
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
+    display: block;
+    padding: 5px 0;
 }
 header nav ul li a:hover {
     color: #38bdf8;
@@ -49,6 +56,9 @@ header nav ul li a:hover {
     font-size: 20px;
     color: #f8fafc;
     display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
 }
 .logo img{
     width: 50px;
@@ -87,13 +97,13 @@ section, .container {
 }
 .hero h1 {
     margin-bottom: 15px;
+    font-size: 48px;
 }
 .hero h1 span {
     color: #38bdf8;
 }
 .hero h3 {
     font-size: 20px;
-    color: #94a3b8;
     margin-bottom: 20px;
     font-weight: 400;
 }
