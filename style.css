@@ -62,12 +62,28 @@ section, .container {
     scroll-margin-top: 60px;
 }
 .main {
-    text-align: center;
-    padding: 120px 20px;
-    position: relative;
+        background: linear-gradient(
+            rgba(5, 11, 31, 0.7), 
+            rgba(5, 11, 31, 0.7)
+        ), url('hero.jpg') center/cover no-repeat;
+        text-align: center;
+        padding: 120px 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.about_content {
     display: flex;
-    justify-content: center;
+    gap: 30px;
     align-items: center;
+}
+.profile_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
 }
 .hero h1 {
     margin-bottom: 15px;
