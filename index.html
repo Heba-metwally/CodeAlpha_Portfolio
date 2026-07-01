@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heba Metwally | Portfolio</title>
-    <link rel="icon" type="image/png" sizes="128x128" href="logo.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +12,15 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="Heba Metwally Logo">
+                <img src="images/logo.png" alt="Heba Metwally Logo">
                 <h2>Heba <span>Metwally</span></h2>
             </div>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education & Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#tools">Tools</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,7 +29,7 @@
     <section class="main">
         <div class="hero">
             <h1>Hi, I'm <span>Heba Metwally</span></h1>
-            <h2>I'm a Junior Front-End Developer</h2>
+            <h2>Junior Front-End Developer</h2>
             <p>
                 Passionate Front-End Developer and Computer Science student dedicated to building modern, responsive, and user-friendly web applications.
                 Continuously learning new technologies and transforming creative ideas into digital experiences.
@@ -39,7 +41,7 @@
     <section id="about" class="container">
         <h2>About Me</h2>
         <div class="about_content">
-            <img src="profile.jpg" class="profile_img">
+            <img src="images/profile.jpg" class="profile_img">
             <p> I'm a passionate Computer Science student deeply interested in software engineering and web technologies. Combining academic knowledge like OOP, Data Structures, and SQL with modern frontend tools like HTML, CSS, bootstrap and React, I create efficient, clean and responsive web applications.</p>
         </div>
         <div>
@@ -48,14 +50,13 @@
 
     <section id="education" class="container">
         <h2>Education & Experience</h2>
-    
+
         <div class="timeline">
-    
             <div class="timeline-item left">
                 <div class="timeline-content">
                     <h3>Computer and Information Technology</h3>
                     <p class="institution">Tanta University</p>
-                    <p class="date">2024 – Present</p>
+                    <p class="date">2024 – 2028</p>
                     <p>Studying programming, OOP, Data Structures, Databases, Algorithms and Operating Systems.</p>
                 </div>
             </div>
@@ -71,20 +72,36 @@
                         <li>Worked with HTML, CSS, JavaScript and React.</li>
                         <li>Improved UI/UX and responsive layouts.</li>
                     </ul>
-                    <img src="CodeAlpha.jpg">
+                    <img src="images/CodeAlpha.jpg">
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Human Resources (HR) Training</h3>
+                    <p class="institution">Ahmed Adel</p>
+                    <p class="date">Decemper 2025</p>
+            
+                    <ul>
+                        <li>Completed HR fundamentals training.</li>
+                        <li>Learned recruitment and selection techniques.</li>
+                        <li>Studied employee performance management.</li>
+                        <li>Developed communication and interviewing skills.</li>
+                    </ul>
+            
+                    <img src="images/HR.jpg" alt="HR Certificate">
                 </div>
             </div>
     
-            <div class="timeline-item left">
+            <div class="timeline-item right">
                 <div class="timeline-content">
                     <h3>ITI CS50 Training</h3>
                     <p class="institution">Information Technology Institute</p>
                     <p class="date">Aug 2025 – Sep 2025</p>
                     <p>Completed CS50 foundations covering computer science fundamentals.</p>
-                    <img src="iti.jpeg">
+                    <img src="images/iti.jpeg">
                 </div>
             </div>
-    
         </div>
     </section>
     
@@ -128,55 +145,75 @@
     </section>
 
     <section id="projects" class="container">
-        <h2> Projects</h2>
-        <div class="projects_style">
-            <div class="project_card">
-                <div class="project_header">
-                    <i class="fa-solid fa-headphones project_icon"></i>
-                    <h3>Music Player App</h3>
+        <h2>Projects</h2>
+       <div class="projects_style">
+        <div class="project_card" id="projectCard" tabindex="0">
+            <div class="project_slider">
+                <div class="slides">
+                    <img src="images/RPS.png" class="active">
+                    <img src="images/calculator.png">
+                    <img src="images/gallery.png">
+                    <img src="images/MusicPlayer.png">
                 </div>
-                <p>A custom web audio player with play, pause, track skipping, and volume control features.</p>
-                <a href="https://heba-metwally.github.io/CodeAlpha_MusicPlayer" class="project_link">View Project</a>
-            </div>
+    
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
 
-            <div class="project_card">
-                <div class="project_header">
-                    <i class="fa-solid fa-calculator project_icon"></i>
-                    <h3>Calculator App</h3>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-                <p>Simple, interactive, and beautifully designed calculator built using modern vanilla JavaScript logic.</p>
-                <a href="https://heba-metwally.github.io/CodeAlpha_Calculator" class="project_link">View Project</a>
             </div>
-
-            <div class="project_card">
-                <div class="project_header">
-                    <i class="fa-solid fa-images project_icon"></i>
-                    <h3>Image Gallery</h3>
-                </div>
-                <p>A fully responsive media grid gallery layout built with clean HTML and advanced CSS styling.</p>
-                <a href="https://heba-metwally.github.io/CodeAlpha_ImageGallery" class="project_link">View Project</a>
-            </div>
-
-            <div class="project_card">
-                <div class="project_header">
-                    <i class="fa-solid fa-gamepad project_icon"></i>
-                    <h3>Rock Paper Scissors game</h3>
-                </div>
-                <p>A classic interactive Rock, Paper, Scissors game featuring real-time score tracking, dynamic UI updates, and an engaging user experience built with Vanilla JavaScript.</p>
-                <a href="https://heba-metwally.github.io/RPS-game/" class="project_link">View Project</a>
-            </div>
+            <h3 id="projectTitle">Rock Paper Scissors</h3>
+            <p id="projectDesc">
+                Interactive Rock Paper Scissors game with score tracking.
+            </p>
+            <a id="projectLink"
+               href="https://heba-metwally.github.io/RPS-game"
+               target="_blank"
+               class="project_link">
+                View Project
+            </a>
         </div>
+       </div>
     </section>
 
-    <section id="about" class="container">
+    <section id="tools" class="container">
         <h2>Tools</h2>
-        <div class="about_content">
-            
-        </div>
-        <div>
+        <div class="tools_list">
+            <div class="tool_item">
+                <img src="images/chatgpt.png" alt="ChatGPT">
+                <span>ChatGPT</span>
+            </div>
+    
+            <div class="tool_item">
+                <img src="images/cursor.png" alt="Cursor">
+                <span>Cursor</span>
+            </div>
+    
+            <div class="tool_item">
+                <img src="images/bootstrap.png" alt="Bootstrap">
+                <span>Bootstrap</span>
+            </div>
+    
+            <div class="tool_item">
+                <img src="images/claude.png" alt="Claude">
+                <span>Claude AI</span>
+            </div>
+    
+            <div class="tool_item">
+                <img src="images/react.png" alt="React">
+                <span>React</span>
+            </div>
+    
+            <div class="tool_item">
+                <img src="images/colorPick.png" alt="ColorPick">
+                <span>ColorPick</span>
+            </div>
         </div>
     </section>
-
 
     <footer id="contact">
         <p class="footer_title">Get in Touch</p>
